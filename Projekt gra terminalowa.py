@@ -36,7 +36,7 @@ elif wybor_spoznienie_pizama == 2:
         sympatia_ludzi = 4
 else:
     print("Zostala wprowadzona zla komenda")
-#henlo
+#henlo1
 #Tutaj nasze dwie początkowe ścieżki się spotykają, więc kontynuujmy tutaj.
 
 
