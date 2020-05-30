@@ -19,6 +19,7 @@ if wybor_spoznienie_pizama == 1:
         #Ludzie nas lubia, wiec sympatia 2
         sympatia_ludzi = 2
     else:
+        print("hej")
         print("Zostala wprowadzona zla komenda")
 #WYBOR SPOZNIENIE A PIZAMA - PIZAMA
 elif wybor_spoznienie_pizama == 2:
@@ -270,3 +271,4 @@ elif wybor_wf == 3:
 
 
 #D R U G I    S E M E S T R
+# START
