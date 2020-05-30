@@ -1,6 +1,6 @@
 import random
 
-
+#dodaj imie
 print("Powitanie! Studia blablabla wybory")
 #WYBOR SPOZNIENIE A PIZAMA
 print("budzisz sie, spozniony na zajecia. Co robisz?\n1 - spozniasz sie na zajecia, 2 - idziesz na zajecia w pizamie")
@@ -19,7 +19,6 @@ if wybor_spoznienie_pizama == 1:
         #Ludzie nas lubia, wiec sympatia 2
         sympatia_ludzi = 2
     else:
-        print("hej")
         print("Zostala wprowadzona zla komenda")
 #WYBOR SPOZNIENIE A PIZAMA - PIZAMA
 elif wybor_spoznienie_pizama == 2:
