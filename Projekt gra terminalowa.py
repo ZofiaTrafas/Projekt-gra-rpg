@@ -1,5 +1,5 @@
 import random
-
+#tu Werka
 #dodaj imie
 print("Powitanie! Studia blablabla wybory")
 #WYBOR SPOZNIENIE A PIZAMA
