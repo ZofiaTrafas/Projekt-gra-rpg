@@ -1,7 +1,27 @@
 import random
-#tu Werka
-#dodaj imie
-#:)))
+from tkinter import *
+from tkinter import messagebox
+from PIL import Image, ImageTk, ImageFilter, ImageFont, ImageDraw
+
+#wstawiam pierwszy obraz
+def powitanie():
+    messagebox.showinfo("Powitanie","Witaj! Jesteś studentem I roku Koniowistyki na Uniwerystecie Juliusza Słowackiego.")
+    messagebox.showinfo("Rada na początek nauki","Okres studiów to najlepszy czas w Twoim życiu. Pamiętaj, żeby go nie zmarnować...")
+
+glowneOkno=Tk()
+plotno=Canvas(glowneOkno, width=400, height=400)
+plotno.pack()
+# wy nie macie zapisanych tych obrazów co mam ja, więc u was się nie wyświetlą
+# i będzie error
+obraz=Image.open("1.Uniwersytet.jpg")
+obraz=obraz.resize((400,400))
+obrazTk=ImageTk.PhotoImage(obraz)
+plotno.create_image(200,200,image=obrazTk)
+przycisk1=Button(glowneOkno, text="Powitanie",command=powitanie)
+przycisk1.pack()
+glowneOkno.mainloop()
+
+
 print("Powitanie! Studia blablabla wybory")
 #WYBOR SPOZNIENIE A PIZAMA
 print("budzisz sie, spozniony na zajecia. Co robisz?\n1 - spozniasz sie na zajecia, 2 - idziesz na zajecia w pizamie")
