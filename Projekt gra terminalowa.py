@@ -336,8 +336,6 @@ def wybor_1():  # wyskakuje po naciśnięciu przycisk_1
         przycisk_2.configure(state = "disabled", bg = "grey")
         przycisk_3.configure(state = "disabled", bg = "grey")
 
-#warianty których brakuje 1+1+2/3 or 2+2+1/3
-
 
 def wybor_2():  # wyskakuje po naciśnięciu przycisk_2
     global tura
@@ -417,48 +415,32 @@ def sprawdzenie_sympatii_ludzi():
 
 
 
-okno_test = Tk()
-okno_test.title("Testuje przyciski")
-okno_test.geometry("800x300")
+okno_gry = Tk()
+okno_gry.title("Testuje przyciski")
+okno_gry.geometry("800x300")
 
-#WPROWADZENIE - imię i przywitanie - niedziała, nwm czemu, ale jeszcze pobrubuję
 
-# podaj_imie = Entry(okno_test, width = 10)
-# podaj_imie.grid(column = 3, row = 3)
-# podaj_imie.focus()  # nietrzeba klikać na txtbox żeby zacząć pisać
-# imie = podaj_imie.get()
-# podaj_imie.grid_remove()
-#
-# tekst = Label(okno_test, text = ("Cześć", imie, "wprowadzenie"), font = ("Arial Bold", 13))
-# tekst.grid(column = 0, row = 0)
-# time.sleep(3)
-# tekst.configure(text = "Budzisz sie, spozniony na zajecia. Co robisz?")
+#START - pierwszy wybór i baza do reszty
 
-#START - pierwszy wybór i baza do reszty, jak zadziała to u góry ten będzie zbędny
-
-tekst = Label(okno_test, text = "Budzisz sie, spozniony na zajecia. Co robisz?", font = ("Arial Bold", 13))
+tekst = Label(okno_gry, text = "Budzisz sie, spozniony na zajecia. Co robisz?", font = ("Arial Bold", 13))
 tekst.place(x = 200,y = 50)
 
 #RZECZY POTZREBNE I KONIECZNE :P
 
 #Do notatek/ sprawdzenia czy wszystko działa i uzasadnień przyjaciół
-reakcje = Label(okno_test, text = "")
+reakcje = Label(okno_gry, text = "")
 reakcje.place(x = 250,y = 200)
 
 #Przycisk_3 jest aktywowany w odpowiednich miejscach w funkcajch wyborów + po wyborze przyjaciół będzie usunięty
-przycisk_1 = Button(okno_test, text = " Spozniasz sie na zajecia ", bg = "yellow", command = wybor_1)
+przycisk_1 = Button(okno_gry, text = " Spozniasz sie na zajecia ", bg = "yellow", command = wybor_1)
 przycisk_1.place(x = 150,y =  150)
 
-przycisk_2 = Button(okno_test, text = " Idziesz na zajecia w pizamie ", bg = "yellow", command = wybor_2)
+przycisk_2 = Button(okno_gry, text = " Idziesz na zajecia w pizamie ", bg = "yellow", command = wybor_2)
 przycisk_2.place(x = 350,y =  150)
 
-przycisk_3 = Button(okno_test, text = "                                          ", bg = "yellow", command = wybor_3)
+przycisk_3 = Button(okno_gry, text = "                                          ", bg = "yellow", command = wybor_3)
 przycisk_3.place(x = 600,y =  150)
 przycisk_3.configure(state = "disabled", bg = "grey")
-
-### chciałam wyłączyć przycisk_3 na pierwsze pytania jednym ifem, ale nie działa; pomysły mile widziane :D
-# if tura < 20:
-#     przycisk_3.configure(state = "disabled", bg = "grey")
 
 
 okno_test.mainloop()
