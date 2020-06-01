@@ -1,6 +1,6 @@
 import random
 
-#dodaj imie :)
+#dodaj imie :))
 print("Wpisz imię bohatera:")
 imię=input()
 print("Oto imię bohatera:", imię)
