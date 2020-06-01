@@ -1,9 +1,30 @@
 import random
+from tkinter import *
+from tkinter import messagebox
+from PIL import Image, ImageTk, ImageFilter, ImageFont, ImageDraw
+glowneOkno=Tk()
 
+#wcześniej przesłałam na GitHuba pliki zdjęciowe
+#wstawiam pierwszy obraz na próbę, żeby zobaczyć czy u was wyświetli się plik
+def powitanie():
+    messagebox.showinfo("Powitanie","Witaj! Jesteś studentem I roku Koniowistyki na Uniwerystecie Juliusza Słowackiego.")
+    messagebox.showinfo("Rada na początek nauki","Okres studiów to najlepszy czas w Twoim życiu. Pamiętaj, żeby go nie zmarnować...")
+
+plotno=Canvas(glowneOkno, width=400, height=400)
+plotno.pack()
+obraz=Image.open("1.Uniwersytet.jpg")
+obraz=obraz.resize((400,400))
+obrazTk=ImageTk.PhotoImage(obraz)
+plotno.create_image(200,200,image=obrazTk)
+przycisk1=Button(glowneOkno, text="Powitanie",command=powitanie)
+przycisk1.pack()
+glowneOkno.mainloop()
 #dodaj imie :))
 print("Wpisz imię bohatera:")
 imię=input()
 print("Oto imię bohatera:", imię)
+
+
 #:)))
 print("Powitanie! Studia blablabla wybory")
 #WYBOR SPOZNIENIE A PIZAMA
