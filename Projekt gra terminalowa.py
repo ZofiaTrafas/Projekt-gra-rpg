@@ -1,6 +1,9 @@
 import random
 
 #dodaj imie
+print("Wpisz imię bohatera:")
+imię=input()
+print("Oto imię bohatera:", imię)
 #:)))
 print("Powitanie! Studia blablabla wybory")
 #WYBOR SPOZNIENIE A PIZAMA
