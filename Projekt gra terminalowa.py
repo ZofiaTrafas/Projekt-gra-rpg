@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from PIL import Image, ImageTk, ImageFilter, ImageFont, ImageDraw
 
-#wstawiam pierwszy obraz
+#wstawiam pierwszy obraz ok :)
 def powitanie():
     messagebox.showinfo("Powitanie","Witaj! Jesteś studentem I roku Koniowistyki na Uniwerystecie Juliusza Słowackiego.")
     messagebox.showinfo("Rada na początek nauki","Okres studiów to najlepszy czas w Twoim życiu. Pamiętaj, żeby go nie zmarnować...")
