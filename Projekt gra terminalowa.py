@@ -10,6 +10,10 @@ def powitanie():
     messagebox.showinfo("Powitanie","Witaj! Jesteś studentem I roku Koniowistyki na Uniwerystecie Juliusza Słowackiego.")
     messagebox.showinfo("Rada na początek nauki","Okres studiów to najlepszy czas w Twoim życiu. Pamiętaj, żeby go nie zmarnować...")
 
+def imie():
+    messagebox.showinfo("Wpisz swoje imię")
+    imię=input()
+
 plotno=Canvas(glowneOkno, width=400, height=400)
 plotno.pack()
 obraz=Image.open("1.Uniwersytet.jpg")
@@ -18,11 +22,17 @@ obrazTk=ImageTk.PhotoImage(obraz)
 plotno.create_image(200,200,image=obrazTk)
 przycisk1=Button(glowneOkno, text="Powitanie",command=powitanie)
 przycisk1.pack()
+obraz1=Image.open("2.Pokój w akademiku.jpg")
+obraz1=obraz.resize((400,400))
+obrazTk=ImageTk.PhotoImage(obraz1)
+plotno.create_image(200,200,image=obrazTk)
+przycisk2=Button(glowneOkno, text="Imię",command=imie)
+przycisk2.pack()
 glowneOkno.mainloop()
 #dodaj imie :))
-print("Wpisz imię bohatera:")
-imię=input()
-print("Oto imię bohatera:", imię)
+# print("Wpisz imię bohatera:")
+# imię=input()
+# print("Oto imię bohatera:", imię)
 
 
 #:)))
@@ -464,4 +474,4 @@ przycisk_3.place(x = 600,y =  150)
 przycisk_3.configure(state = "disabled", bg = "grey")
 
 
-okno_test.mainloop()
+okno_gry.mainloop()
